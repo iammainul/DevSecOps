@@ -55,7 +55,7 @@ sonar.java.binaries=.
 ```
 If you don't put properties your build will fail.
 
-![SonarQube](/Images/GlobalSettigs.jpg)
+![SonarQube](/Images/GobalSettigs.jpg)
 
 
 ##Checkmarx
