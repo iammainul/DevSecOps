@@ -35,6 +35,7 @@ I had a Checkmarx license which I used for this project. More on that in the set
 First of all we go to jenkins dashboard and create an freestyle project. After the project has been created we fill the necessary fields. Like Description and other options.
 Next we move on to the source code management and select the preferred method. I am using github here with a public repository. If you have a private repository you can add credentials as well to connect.
 ![github](/Images/GetCode.jpg)
+--------------------------------------------------------------------------------------------------------------------------------------
 ![git](/Images/Git.jpg)
 
 ##SonarQube
@@ -54,21 +55,21 @@ sonar.java.binaries=.
 ```
 If you don't put properties your build will fail.
 
-[SonarQube]: /Images/GlobalSettigs.jpg
+![SonarQube](/Images/GlobalSettigs.jpg)
 
 
 ##Checkmarx
 
 First of all we again go and fill up the Checkmarx Credentials details in the Manage Jenkins section. 
-[CheckMarx-1]: /Images/ManageJenkins_Checkmarx.jpg
+![CheckMarx-1](/Images/ManageJenkins_Checkmarx.jpg)
 After that we create a freestyle project and after filling up the necessary details, we go and create a build step where we execute checkmarx scan.
-[CheckMarx-2]: /Images/CheckMarx-2.jpg
+![CheckMarx-2](/Images/CheckMarx-2.jpg)
 The deatils will get filled on its own. It's upto you how you want to play with it.
 
 ##Deployement
 
 As my project was a MAVEN Project, i created a maven project from Jenkins Dashboard. Then After we add the pom.xml file and set goals and options as clean package to build it.
 As a post-build action we Deploy the war/ear to  container.
-[Deploy-1]: /Images/Deploy-1.jpg
+![Deploy-1](/Images/Deploy-1.jpg)
 
 ##ZAP Proxy
