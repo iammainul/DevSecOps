@@ -35,7 +35,7 @@ I had a Checkmarx license which I used for this project. More on that in the set
 First of all we go to jenkins dashboard and create an freestyle project. After the project has been created we fill the necessary fields. Like Description and other options.
 Next we move on to the source code management and select the preferred method. I am using github here with a public repository. If you have a private repository you can add credentials as well to connect.
 ![github](/Images/GetCode.jpg)
---------------------------------------------------------------------------------------------------------------------------------------
+Git Setting in Manage Jenkins
 ![git](/Images/Git.jpg)
 
 ##SonarQube
