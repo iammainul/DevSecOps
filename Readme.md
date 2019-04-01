@@ -63,7 +63,7 @@ If you don't put properties your build will fail.
 First of all we again go and fill up the Checkmarx Credentials details in the Manage Jenkins section. 
 ![CheckMarx-1](/Images/ManageJenkins_Checkmarx.jpg)
 After that we create a freestyle project and after filling up the necessary details, we go and create a build step where we execute checkmarx scan.
-![CheckMarx-2](/Images/CheckMarx-2.jpg)
+![CheckMarx-2](/Images/Checkmarx-2.jpg)
 The deatils will get filled on its own. It's upto you how you want to play with it.
 
 ##Deployement
