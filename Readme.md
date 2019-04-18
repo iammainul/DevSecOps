@@ -18,7 +18,7 @@ We will be deploying a Java Application which we will pull from github and conti
 A windows installation. The softwares required are:
 
 1. Java JDK 8 [Link](https://www.oracle.com/technetwork/java/javaee/downloads/jdk8-downloads-2133151.html). You need to set JAVA_HOME in your environment variable. If you are not aware about the procedure, please follow this [link](https://confluence.atlassian.com/doc/setting-the-java_home-variable-in-windows-8895.html).
-2. Tomcat 8 [Link](https://tomcat.apache.org/download-80.cgi). We will need to a few tomcat users. The tutorial can be found [here](https://www.hivelocity.net/kb/how-to-add-user-to-tomcat/). We would need to add an `manager-script` user role to *"tomcat-users.xml"*.
+2. Tomcat 8 [Link](https://tomcat.apache.org/download-80.cgi). We will need to a few tomcat users. The tutorial can be found [here](https://www.hivelocity.net/kb/how-to-add-user-to-tomcat/). We would need to add an manager-script user role to *"tomcat-users.xml"*.
 
 
 # Installation of Tools
@@ -56,7 +56,12 @@ Git Setting in Manage Jenkins
 
 ## SonarQube
  
-First of all we need to setup SonarQube and SonarRunner. Please find the images to setup SonarQube and SonarRunner.
+First of all we need to setup SonarQube and SonarRunner.
+1. Let's start the server first. We go to the Downloads directory and unzip the zip folder for SonarQube and copy it in out working directory.
+2. Now we go into the directory and go to *bin/[OS_NAME]/* and open cmd in the folder and we run StartSonar.bat.
+3. The default URL is ***http://localhost:9000/***. We visit that and try to login with the default credentials (admin/admin).
+4. Now open the Jenkins console and navigate to Manage Jenkins, Manage Plugins.
+5. We will be installing the __SonarQube Scanner__ Plugin.
 Then we go to Jenkins dashboard and create an freestyle project. We configure the source code management as we did in the last step.
 Now we add a build step: Execute SonarQube Scanner. Where we need to pit the Analysis Properties as per y project. I will give you an example.
 
