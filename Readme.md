@@ -9,18 +9,23 @@ What happens is we collect the code in a single repository and as soon as we int
 
 ## Our Purpose
 
-Here we are using *CICD* to demonstrate the automation process of the security testing of the code. We will be covering both. *SAST = Static Application Security Testing* and *DAST = Dynamic Application Security Testing"*.
+Here we are using *CICD* to demonstrate the automation process of the security testing of the code. We will be covering both. *SAST = Static Application Security Testing* and *DAST = Dynamic Application Security Testing*.
 
 *This documentation will be focused towards Windows based CICD development as there are lots of documentation is available for Linux.*
-We will be deploying a Java Application which we will pull from github and continue to use that source code throughout our development.
+We will be deploying a Java Application which we will pull from github and continue to use that source code throughout our development. I have forked the repository from [CSPF](https://github.com/CSPF-Founder). All credits to them for the code.
 
+### PreRequisites
+A windows installation. The softwares required are:
+
+1. Java JDK 8 [Link](https://www.oracle.com/technetwork/java/javaee/downloads/jdk8-downloads-2133151.html). You need to set JAVA_HOME in your environment variable. If you are not aware about the procedure, please follow this [link](https://confluence.atlassian.com/doc/setting-the-java_home-variable-in-windows-8895.html).
+2. Tomcat 8 [Link](https://tomcat.apache.org/download-80.cgi). We will need to a few tomcat users. The tutorial can be found [here](https://www.hivelocity.net/kb/how-to-add-user-to-tomcat/). We would need to add an `manager-script` user role to *"tomcat-users.xml"*.
 
 
 # Installation of Tools
 
 ## Jenkins
 
-To install Jenkins it is recommended to download the latest version from this [link](https://jenkins.io/download/).
+To install Jenkins it is recommended to download the latest version from this [link](https://jenkins.io/download/). You can follow these [steps](https://dzone.com/articles/how-to-install-jenkins-on-windows) to complete the installation.
 
 ### Dependencies
 
