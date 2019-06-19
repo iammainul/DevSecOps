@@ -14,7 +14,7 @@ Here we are using *CICD* to demonstrate the automation process of the security t
 *This documentation will be focused towards Windows based CICD development as there are lots of documentation is available for Linux.*
 We will be deploying a Java Application which we will pull from github and continue to use that source code throughout our development. I have forked the repository from [CSPF](https://github.com/CSPF-Founder). All credits to them for the code.
 
-### PreRequisites
+### Pre-Requisites
 A windows installation. The softwares required are:
 
 1. Java JDK 8 [Link](https://www.oracle.com/technetwork/java/javaee/downloads/jdk8-downloads-2133151.html). You need to set JAVA_HOME in your environment variable. If you are not aware about the procedure, please follow this [link](https://confluence.atlassian.com/doc/setting-the-java_home-variable-in-windows-8895.html).
